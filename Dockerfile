@@ -1,5 +1,7 @@
 FROM python:3.11-slim
 
+LABEL org.opencontainers.image.source=https://github.com/MaironLima/mlops-deploy
+
 WORKDIR /app
 
 RUN useradd -ms /bin/bash appuser && chown -R appuser:appuser /app
